@@ -1,0 +1,276 @@
+@media (min-width: 610px)
+{
+    html{
+    box-sizing: border-box;
+    font-family:'Open Sans',sans-serif ;
+}
+.linktoamazon{
+    background-color: #f5f7fa;
+    max-width: 50rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amazon{
+    
+    background-color:#dae6f8;
+    border-radius: .2rem;
+    padding: 2%;
+    color:#60a9ff ;
+}
+.amazon:hover{
+    background-color: #60a9ff;
+    border-radius: .2rem;
+    padding: 2%;
+    color: #f5f7fa;
+}
+.containing{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+body{
+    min-height: 100vh;
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    background-color: white;
+    width: 50rem;
+    height: 30rem;
+    display: flex;  
+    border-radius: .5rem;
+    flex-direction: row;
+    transition-duration: .2s;
+}
+
+.pricing-plan{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-family: 'Passion One', sans-serif;
+    transition-duration: .3s;
+}
+.pricing-plan:hover{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-family: 'Passion One', sans-serif;
+    transition-duration: .3s;
+    background-color:aliceblue;
+    border-radius: .7rem;
+}
+img{
+transition-duration: .3s;
+    width: 13rem;
+    height: 10rem;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.pricing-header{
+    margin-top: 0;
+    font-family: 'Archivo Black', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 1.3rem;
+transition-duration: .3s;
+}
+.pricing-header:hover{
+    margin-top: 0;
+    font-family: 'Archivo Black', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 1.3rem;
+transform: translateY(5px);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 7rem;
+    font-family: 'Passion One', sans-serif;
+    color: #60a9ff;
+    
+}
+li:hover{
+    transform: translateX(5px);
+
+    text-align: center;
+}
+li{
+    transition-duration: .3s;
+    text-align: center;
+}
+hr{
+    background-color: #f5f7fa;
+    width: 12em;
+}
+.pricing-price{
+    transition-duration: .3s;
+font-size: 2rem;
+}
+.pricing-price:hover{
+    transform:  scale(1.2);
+    font-size: 2rem;
+    }
+    
+
+.pricing-button:hover{
+    background-color: #60a9ff;
+    width: 5rem;
+    height:2rem;
+    text-align: center;
+    padding-top: .7rem ;
+    border-color: #60a9ff;
+    border-radius: .3rem;
+    border-style: solid;
+    color: aliceblue;
+    transition-duration: .5s;
+}
+.pricing-button
+{
+    background-color: aliceblue;
+    width: 5rem;
+    height:2rem;
+    text-align: center;
+    padding-top: .7rem ;
+    border-color: #60a9ff;
+    border-radius: .3rem;
+    border-style: solid;
+    color: #60a9ff;
+}
+a{
+    text-decoration: none;
+}
+
+}
+@media(max-width:610px)
+{
+html{
+    box-sizing: border-box;
+    font-family:'Open Sans',sans-serif ;
+}
+body{
+    min-height: 100vh;
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    background-color: white;
+    width: 20rem;
+    height: 100rem;
+    display: flex;  
+    border-radius: .5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+
+
+}
+.pricing-plan{
+    height: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-family: 'Passion One', sans-serif;
+}
+img{
+    width: 13rem;
+    height: 10rem;
+}
+.pricing-header{
+    margin-top: 0;
+font-family: 'Poppins', sans-serif;
+font-size: 1.3rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+    color: #60a9ff;
+    margin-bottom: 0;
+}
+li{
+    
+    text-align: center;
+}
+hr{
+    background-color: #f5f7fa;
+    width: 15em;
+}
+.pricing-price{
+font-size: 2rem;
+}
+.pricing-button{
+    background-color: #60a9ff;
+    width: 5rem;
+    height:2rem;
+    text-align: center;
+    padding-top: .6rem ;
+    border-color: #60a9ff;
+    border-radius: .3rem;
+    border-style: solid;
+    color:aliceblue;
+}
+a{
+    text-decoration: none;
+}
+.linktoamazon{
+    background-color: #f5f7fa;
+    max-width: 50rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amazon{
+    
+    background-color:#dae6f8;
+    border-radius: .2rem;
+    padding: 2%;
+    color:#60a9ff ;
+}
+.amazon:hover{
+    background-color: #60a9ff;
+    border-radius: .2rem;
+    padding: 2%;
+    color: #f5f7fa;
+}
+.containing{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.content-link {
+    text-decoration: none;
+}
+
+.content {
+    background-color: #6699CC;
+    width: 80%;
+    max-width: 50rem;
+    height: 8rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.content-text {
+    width: 20rem;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.content:hover {
+    transform: scale(1.1);
+}

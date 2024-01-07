@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document </title>
+    <link rel="stylesheet" href="pingpong.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <div class="maincontent">
+            <img src="https://img.freepik.com/free-vector/people-playing-table-tennis_23-2148662482.jpg" alt="">
+            <div class="gamename">Ping Pong score keeper</div>
+            <div class="scorecontainer">
+                <h1 id="score"><span class="gre">0</span> to <span class="gre">0</span></h1>
+                <div class="afterscore">Use the button below to set score</div>
+                <div class="playingto">Playing to</div>
+                <div class="maxscore">
+                    <input type="range" name="mscore" id="mscore" min="5" max="21" value="10" step="1" />
+                    <span class="changemaxscore">10 Points</span> 
+                </div>
+            </div>
+            <div class="footer">
+                <span><button class="playerpoints" id="player1">Add a Point</button></span>
+                <span><button class="playerpoints"id="player2">Add a Point</button></span>
+                <span><button class="playerpoints" id="reset">Reset</button></span>
+            </div>
+        </div>
+    </div>
+    <script src="pingpong.js"></script>
+</body>
+</html>
