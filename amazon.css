@@ -91,7 +91,7 @@ body {
  
 }
 .topsecond {
-  z-index: 4;
+  z-index: 2;
   width: 100vw; /* Set width to 100% of the viewport width */
   background-color: #25303d;
   height: 2.5vw;
@@ -364,4 +364,7 @@ body {
 }
 .carousel-control-next , .carousel-control-prev{
   padding-top: 25vw;
+}
+.btn-warning{
+  font-size: 1vw;
 }
