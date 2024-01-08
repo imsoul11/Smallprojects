@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
@@ -85,13 +85,20 @@ body {
   width: 100vw; /* Set width to 100% of the viewport width */
   background-color: rgb(19, 26, 34);
   height: 4vw;
+  position:fixed;
+  z-index: 4;
   display:flex;
+ 
 }
 .topsecond {
+  z-index: 4;
   width: 100vw; /* Set width to 100% of the viewport width */
   background-color: #25303d;
   height: 2.5vw;
+  position: fixed;
   display: flex;
+  margin-top: 4vw;
+  
 }
 .topsecond > div{
    color: #FFFFFF;
@@ -306,18 +313,20 @@ body {
 
 .for {
   position: absolute;
-  margin-top: 68vw;
+  margin-top: 74vw;
   background-color: rgba(211, 217, 222, 0.577);
   width: 5vw;
   height: 10vw;
   
   z-index: 2;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer; /* Added cursor property for better indication of clickability */
 }
 #forr{
   left: 94vw;
- 
+  position: absolute;
+  margin-top: -17vw;
+  
 }
 .leftright img,.for img{
     margin: 1vw;
@@ -337,11 +346,22 @@ body {
 
 .for:hover{
   position: absolute;
-  margin-top: 68vw;
+  margin-top: 74vw;
   background-color: rgba(252, 252, 252,.75);
   width: 5vw;
   height: 10vw;
   z-index: 2;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer; /* Added cursor property for better indication of clickability */
+}
+#for:hover{
+  left: 94vw;
+  position: absolute;
+  margin-top: -17vw;
+}
+#carouselExample{
+  padding-top: 6.5vw;
+}
+.carousel-control-next , .carousel-control-prev{
+  padding-top: 25vw;
 }
