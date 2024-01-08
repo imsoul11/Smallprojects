@@ -3,13 +3,13 @@ let elementstomove = document.querySelectorAll('.leftright');
 let i = 0;
 let j = 0;
 
-function transleft() {
+function transright() {
     if(i==-120)
     {
-        fo.style.backgroundColor = "gray";
-        fo.style.transitionDuration = '0.3s';
+        lo.style.backgroundColor = "gray";
+        lo.style.transitionDuration = '0.3s';
         setTimeout(function() {
-            fo.style.backgroundColor = ""; // set it back to the original color (or another color if needed)
+            lo.style.backgroundColor = ""; // set it back to the original color (or another color if needed)
         }, 200); // 1000 milliseconds = 1 second
         return
     }
@@ -25,12 +25,12 @@ fo.addEventListener('click', transleft);
 
 let lo = document.querySelectorAll('.for')[1];
 
-function transright() {
+function transleft() {
     if(i==0)
-    {lo.style.backgroundColor = "gray";
-    lo.style.transitionDuration = '0.3s';
+    {fo.style.backgroundColor = "gray";
+    fo.style.transitionDuration = '0.3s';
     setTimeout(function() {
-        lo.style.backgroundColor = ""; // set it back to the original color (or another color if needed)
+        fo.style.backgroundColor = ""; // set it back to the original color (or another color if needed)
     }, 200);
         return
     }
