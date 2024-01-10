@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
+  
 }
 
 body {
@@ -28,7 +29,8 @@ body {
   left: 0;
   height: 100%;
   top: 25vw;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 98vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -47,6 +49,20 @@ body {
   justify-content: space-between;
   font-size: 100%; /* Set font size using vw units */
 }
+.cards:hover {
+  margin: 1%;
+  height: 25vw;
+  width: 23%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  font-size: 100%; /* Set font size using vw units */
+  transform: scale(1.008);
+  transition-duration: .2s;
+}
+
 
 .cardcont {
   margin: .5%;
@@ -58,10 +74,19 @@ body {
   text-align: center;
   justify-content: center;
 }
-
+.cardcont:hover{
+  transform: scale(1.08);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+.cardcont:hover{
+  transform: scale(1.08);
+  transition-duration: .2s;
+}
 .cardcont img {
   width: 85%;
   height: 75%;
+  
 }
 
 .cardcont div {
@@ -88,36 +113,33 @@ body {
   position:fixed;
   z-index: 4;
   display:flex;
+cursor: pointer;
  
 }
 .topsecond {
   z-index: 2;
-  width: 100vw; /* Set width to 100% of the viewport width */
+  width: 99vw; /* Set width to 100% of the viewport width */
   background-color: #25303d;
   height: 2.5vw;
-  position: fixed;
+  position: absolute;
   display: flex;
   margin-top: 4vw;
-  
+  justify-content: space-around;
+  align-content: center;
+  font-size: 1vw;
+  cursor: pointer;
+ 
 }
 .topsecond > div{
    color: #FFFFFF;
-   padding-top: .4%;
-   margin:.15% ;
-   padding-left: .34%;
-   padding-right: .34%;
-   font-size: 99%;
+   font-size: 100%;
+   padding-top: .3vw;
 }
 .topsecond > div:hover{
-  color: #FFFFFF;
-  padding-top: .4%;
-  margin:.15% ;
-  padding-left: .34%;
-  padding-right: .34%;
-  font-size: 100%;
-  border-color: #ffffff;
-  border-style: solid;
-  border-width: .1vw;
+  filter: brightness(5.5);
+ 
+
+ 
 }
 .three{
   display: flex;
@@ -162,11 +184,12 @@ body {
   color: white;
   font-weight:bold;
   margin-bottom: .4vw;
+  cursor: pointer;
 }
 .contfoot{
   color:whitesmoke;
   margin: .1vw;
-  
+  cursor: pointer;
 }
 .secondfoot{
   background-color: #232f3e;
@@ -204,17 +227,20 @@ body {
   font-size: small;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .headinginthirdfoot{
   font-size: .9vw;
   font-weight:500;
   color: #f2f2f2;
   padding-top: 1vw;
+  cursor: pointer;
 }
 .contfoot3{
   font-size: .85vw;
   color: gray;
   padding: 0;
+  cursor: pointer;
 }
 .topfoot33{
   padding-top: 1vw;
@@ -226,11 +252,13 @@ body {
 {
   display: flex;align-content: center;justify-content: center;height:3.2vw;width: 100%;background-color: 
   #37475a;
+  cursor: pointer;
 }
 .foottopp:hover
 {
   display: flex;align-content: center;justify-content: center;height:3.2vw;width: 100%;background-color: 
   #43546b;
+  cursor: pointer;
 }
 .droplangtop {
   position: relative; /* Add position: relative; */
@@ -273,9 +301,10 @@ body {
 .iwillhideyou:hover .hidsign{
     visibility: visible;
     opacity: 1;
-    filter: brightness(1.1);
+    filter: brightness(1.05);
     z-index: 2;
 }
+
 
 .yetanother div{
   color: gray;
@@ -311,14 +340,15 @@ body {
   display: inline-block;
 }
 
-.for {
+
+.for { 
   position: absolute;
   margin-top: 74vw;
   background-color: rgba(211, 217, 222, 0.577);
   width: 5vw;
   height: 10vw;
   
-  z-index: 2;
+  z-index: 1;
   /* display: inline-block; */
   cursor: pointer; /* Added cursor property for better indication of clickability */
 }
@@ -332,16 +362,15 @@ body {
     margin: 1vw;
     width: 90%;
     height: 90%;
-   
-  
-  
+}
+body{
+  overflow-x: hidden;
 }
 .for img{
   margin-left: 0;
   margin-top: 1vw;
       width: 100%;
     height: 80%;
-   
 }
 
 .for:hover{
@@ -350,7 +379,7 @@ body {
   background-color: rgba(252, 252, 252,.75);
   width: 5vw;
   height: 10vw;
-  z-index: 2;
+  z-index: 1;
   /* display: inline-block; */
   cursor: pointer; /* Added cursor property for better indication of clickability */
 }
@@ -367,4 +396,76 @@ body {
 }
 .btn-warning{
   font-size: 1vw;
+}
+#back{
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100vh;
+  width: 24vw;
+  z-index: 5;
+  left: -25vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+}
+
+
+
+.bar{
+  height: 3.5vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  background-color: rgb(35,47,62);
+  display: flex;
+  align-items: center;
+
+}
+.s{
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+
+}
+.bar img{
+  width: 2.5vw;
+  margin-bottom: 1vw;
+  margin-right: 1vw;
+  margin-left: 3.2vw;
+}
+.sidebarhead{
+  font-size: 1.3vw;
+  font-weight: 700;
+  margin-left: 3vw;
+  margin-bottom: 1vw;
+}
+.sidebarcont{
+  font-size: 1vw;
+  font-weight: 450;
+  padding-left: 3vw;
+  padding-top: .5vw;
+  padding-bottom: .5vw;
+
+}
+.sidebarcont:hover{
+  font-size: 1vw;
+  font-weight: 450;
+  padding-left: 3vw;
+  background-color: #f2f2f2;
+}
+#all{
+  font-weight: 700;
+}
+
+.seeall img{
+   width: 1.5vw;
+   margin-left: .5vw;
+   margin-bottom: .3vw;
 }
