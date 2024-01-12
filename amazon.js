@@ -53,12 +53,12 @@ back.addEventListener('click',()=>{
 
 
 let sidebar=document.querySelector('.sidebar')
-sidebar.addEventListener('mouseenter',()=>{
-    sidebar.parentElement.style.overflow="hidden"
-})
-sidebar.addEventListener('mouseleave',()=>{
-    sidebar.parentElement.style.overflow=""
-})
+// sidebar.addEventListener('mouseenter',()=>{
+//     sidebar.parentElement.style.overflow="hidden"
+// })
+// sidebar.addEventListener('mouseleave',()=>{
+//     sidebar.parentElement.style.overflow=""
+// })
 
 
 
@@ -139,6 +139,7 @@ seeall.addEventListener('click', () => {
 const all=document.querySelector("#all")
 let sidebarisout=false;
 all.addEventListener('click',()=>{
+    console.log('it is out')
     sidebarisout=true;
     // sidebar.style.transform = 'translateX(35vw)';
     sidebar.classList.remove('transxneg');
@@ -148,6 +149,7 @@ all.addEventListener('click',()=>{
     caroimg2.style.filter="brightness(0.4)"
     caroimg3.style.filter="brightness(0.4)"
     leftrightcard.style.filter="brightness(0.4)"
+    sidebar.parentElement.style.overflow="hidden"
 })
 let caroimg=document.querySelectorAll('.d-block')[0]
 let caroimg2=document.querySelectorAll('.d-block')[1]
@@ -167,9 +169,6 @@ backimg.addEventListener('click',()=>{
     caroimg3.style.filter="brightness(1)"
     leftrightcard.style.filter="brightness(1)"
     sidebarisout=false;
-})
-
-sidebar.addEventListener('mouseleave',()=>{
-    if(sidebarisout)
-    sidebar.parentElement.style.overflow="hidden"
+    sidebar.parentElement.style.overflow="scroll"
+    
 })
