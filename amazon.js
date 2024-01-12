@@ -140,7 +140,9 @@ const all=document.querySelector("#all")
 let sidebarisout=false;
 all.addEventListener('click',()=>{
     sidebarisout=true;
-    sidebar.style.transform = 'translateX(25vw)';
+    // sidebar.style.transform = 'translateX(35vw)';
+    sidebar.classList.remove('transxneg');
+    sidebar.classList.add('transx');
     cards.style.filter="brightness(0.4)"
     caroimg.style.filter="brightness(0.4)"
     caroimg2.style.filter="brightness(0.4)"
@@ -155,7 +157,9 @@ let cards=document.querySelectorAll('.cardholder')[0]
 let leftrightcard=document.querySelector('.leftrightcard')
 const backimg=document.querySelector('#backimg')
 backimg.addEventListener('click',()=>{
-    sidebar.style.transform = 'translateX(-25vw)';
+    // sidebar.style.transform = 'translateX(-25vw)';
+    sidebar.classList.add('transxneg');
+    sidebar.classList.remove('transx');
     console.log('dffd')
     cards.style.filter="brightness(1)"
     caroimg.style.filter="brightness(1)"
